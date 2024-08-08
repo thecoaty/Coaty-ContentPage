@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #4A424D;
+    font-size: 1em;
+}
+
+/*
+Cabeçalho + areas Principais
+*/
+#cabecalho{
+    background-color: #77349B;
+    padding: 15px;
+    text-align: center;
+    min-width: 550px;
+
+}
+#logo{
+    padding: 10px;
+    min-width: 550px;
+
+}
+
+#area-principal{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.conteudo p{
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+    min-width: 550px;
+}
+
+/*Social*/
+#social{
+    padding: 200px;
+    text-align: center;
+    min-width: 250px;
+}
+
+#social a{
+    padding: 10px;
+}
+
+/*Projects*/
+#projects{
+color: #fff;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: auto;
+ justify-content: center;
+ gap: 2.4em;
+ padding: 2rem;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    background-color: #3E2E46;
+    border-radius: 0.8em;
+    padding: 5px;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.project a{
+    text-decoration: none;
+    background-color: #9C00F0;
+    text-shadow: 0.8px 0.8px 0.8px black;
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0.75em 1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.project a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    text-shadow: 0.8px 0.8px 0.8px black;
+    color: black;
+    border-radius: 0.2em;
+    padding: 0.75em 1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.project h2{
+    font-size: 1.8em;
+}
+
+.project p{
+    font-size: 1.1em;
+}
+
+/*
+Menu
+*/
+a{
+    text-decoration: none;
+    font-size: 1.25em;
+}
+a:link, a:visited{
+    color: white;
+}
+#cabecalho a:hover{
+    color: black;
+    background: white;
+}
+#cabecalho a:link, #cabecalho a:visited{
+    padding: 8px 12px;
+}
+
+/*
+Formatações gerais
+*/
+h1{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+

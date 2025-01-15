@@ -50,6 +50,10 @@ footer{
     position: sticky;
     bottom: 0;
 }
+
+footer a img{
+    height: 50px;
+}
 footer a{
     padding: 10px;
 }
@@ -108,7 +112,10 @@ footer a{
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
     #logo{
         font-size: 3em;
     }
@@ -124,21 +131,9 @@ footer a{
     #projects{
         grid-template-columns: 1fr;
     }
- }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    #logo{
-        font-size: 3em;
-    }
-    header p{
-        font-size: 1.5em;
-    }
-    footer{
-        padding-top: 80%;
-    }
-    nav a{
-        font-size: 1.8em;
+    footer a img{
+        height: 100px;
     }
  }
 
@@ -155,6 +150,10 @@ footer a{
     }
     nav a{
         font-size: 1.8em;
+    }
+    
+    footer a img{
+        height: 100px;
     }
 
  }

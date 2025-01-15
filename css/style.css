@@ -15,7 +15,7 @@ nav{
 }
 
 nav a{
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding: 8px 12px;
     text-decoration: none;
 }
@@ -109,6 +109,12 @@ footer a{
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    #logo{
+        font-size: 3em;
+    }
+    header p{
+        font-size: 1.3em;
+    }
     nav{
         font-size: 1.2em;
     }
@@ -122,16 +128,35 @@ footer a{
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    #logo{
+        font-size: 3em;
+    }
+    header p{
+        font-size: 1.5em;
+    }
     footer{
-        padding-top: 400px;
+        padding-top: 80%;
+    }
+    nav a{
+        font-size: 1.8em;
     }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    footer{
-        padding-top: 400px;
+    #logo{
+        font-size: 3em;
     }
+    header p{
+        font-size: 1.5em;
+    }
+    footer{
+        padding-top: 80%;
+    }
+    nav a{
+        font-size: 1.8em;
+    }
+
  }
 
 /* // Large devices (desktops, 992px and up) */

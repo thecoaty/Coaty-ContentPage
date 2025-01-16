@@ -112,6 +112,29 @@ footer a{
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 576px) {
+    #logo{
+        font-size: 3em;
+    }
+    header p{
+        font-size: 1.3em;
+    }
+    nav{
+        font-size: 1.2em;
+    }
+    footer{
+        font-size: 1.2em;
+
+        padding-top: 50%;
+    }
+    #projects{
+        grid-template-columns: 1fr;
+    }
+
+    footer a img{
+        height: 100px;
+    }
+}
 
 
 /* // Small devices (landscape phones, 576px and up) */

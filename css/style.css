@@ -49,6 +49,10 @@ body{
     color: white;
     background: #9C00F0;
 }
+.btn-purple:hover{
+    color: black;
+    background: white;
+}
 #home .card{
     background: #3E2E46;
     color: white;
@@ -73,6 +77,10 @@ footer a{
 
 i{
     font-size: 3em;
+}
+
+i:hover{
+    color: #9C00F0;
 }
 
 

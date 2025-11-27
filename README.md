@@ -10,4 +10,4 @@ study, learn and praticy web development
 <h4>Site refeito usando Bootstrap5</h4>
 + Nova interface <br>
 + Responsividade <br>
-+ FontAwasome <br>
++ FontAwesome <br>

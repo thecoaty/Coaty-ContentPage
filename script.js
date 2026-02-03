@@ -1,4 +1,4 @@
-const changeThemeB = document.getElementById("themeButton");
+const changeThemeB = document.getElementById("changeThemeB");
 const html = document.documentElement;
 const iconDark = document.getElementById("fa-moon");
 
@@ -8,7 +8,7 @@ if(savedTheme){
     html.setAttribute("data-theme", savedTheme);
     updateButton(savedTheme);
 }
-themeButton.addEventListener("click", () => {
+changeThemeB.addEventListener("click", () => {
 const currentTheme = html.getAttribute("data-theme");
 const newTheme = currentTheme === "white" ? "dark" : "white";
 
@@ -19,7 +19,7 @@ updateButton(newTheme)
 });
 
 function updateButton(theme){
-    themeButton.textContent =
+    changeThemeB.textContent =
     theme === "white" ? "🌙" : "☀️";
 }
 

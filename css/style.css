@@ -11,9 +11,25 @@ html, body, #home{
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
-    background: black;
+
+:root{
+    --bg-color: black;
 }
+[data-theme='white']{
+    --bg-color: #f2f2f2;
+    #Coaty {
+        color: #000000;
+    }
+    #home{
+        color: #000000;
+    }
+}
+
+body{
+    background: var(--bg-color);
+
+}
+
 /* Navegação */
 
 #header{
@@ -33,6 +49,14 @@ body{
     margin: 12px 15px;
 }
 
+#themeButton{
+    position: absolute; right: 20px;
+    cursor: pointer;
+}
+.fa-regular{
+    color: white;
+}
+
 /* Conteudo */
 #coaty{
     text-shadow: 5px 3px #9C00F0;
@@ -40,8 +64,6 @@ body{
 
 #home{
     text-align: center;
-}
-.twhite{
     color: white;
 }
 

@@ -11,3 +11,7 @@ study, learn and praticy web development
 + Nova interface <br>
 + Responsividade <br>
 + FontAwesome <br>
+
+<br>
+<hr>
+<h4>Adicionado Tema Claro</h4>

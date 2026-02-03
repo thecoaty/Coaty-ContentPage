@@ -104,7 +104,15 @@ i{
 i:hover{
     color: #9C00F0;
 }
-
+#themeButton {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -132,5 +140,6 @@ i:hover{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
 
  }

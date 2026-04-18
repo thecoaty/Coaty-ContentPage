@@ -1,6 +1,7 @@
 const changeThemeB = document.getElementById("changeThemeB");
 const html = document.documentElement;
 const iconDark = document.getElementById("fa-moon");
+const btnIcon = document.getElementById("btnIcon");
 
 //verifica tema salvo 
 const savedTheme = localStorage.getItem("theme");
@@ -22,8 +23,14 @@ updateButton(newTheme)
 });
 
 function updateButton(theme){
-    changeThemeB.textContent =
-    theme === "white" ? "🌙" : "☀️";
+    if(theme === "white"){
+        btnIcon.classList.add("fa-moon");
+        btnIcon.classList.remove("fa-sun");
+    }
+    else{
+        btnIcon.classList.add("fa-sun");
+        btnIcon.classList.remove("fa-moon");
+    }
 }
 
 /*Página carrega

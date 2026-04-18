@@ -5,7 +5,7 @@
 
 /* Layout */
 html, body, #home{
-    height: 100%;
+    height: 100vh;
 }
 
 *{
@@ -13,16 +13,22 @@ html, body, #home{
 }
 
 :root{
-    --bg-color: black;
+    --bg-color: #0A0908;
+    --primary-color: #49111C;
+    --secondary-color: #F2F4F3;
+    --btn-color: #F2F4F3;
+    --btn-footer-color: #F2F4F3;
+    --btn-hover: #0A0908;
+    --btn-footer-hover: #49111C;
+    --font-principal: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --text-shadow:5px 3px #49111C;
 }
 [data-theme='white']{
-    --bg-color: #f2f2f2;
-    #Coaty {
-        color: #000000;
-    }
-    #home{
-        color: #000000;
-    }
+    --bg-color: #F2F4F3;
+    --secondary-color: #49111C;
+    --btn-footer-color: #49111C;
+    --btn-footer-hover: #0A0908;
+    --text-shadow:0px 0px #0A0908;
 }
 
 body{
@@ -33,14 +39,18 @@ body{
 /* Navegação */
 
 #header{
-    background: #77349B;
+    background: var(--primary-color);
+    height: 10%;
+}
+#btnIcon{
+    color: var(--btn-color);
 }
 #nav-principal li a{
     color: white;
     font-size: 1.25em;
 }
 #nav-principal li a:hover{
-    color: #77349B;
+    color: black;
     background: white;
 }
 .divisor{
@@ -58,24 +68,24 @@ body{
 
 /* Conteudo */
 #coaty{
-    text-shadow: 5px 3px #9C00F0;
+    text-shadow: var(--text-shadow);
+    font-family: var(--font-principal);
 }
 
 #home{
     text-align: center;
-    color: white;
+    color: var(--secondary-color);
 }
 
-.btn-purple{
-    color: white;
-    background: #b197Fc;
+.btn-projects{
+    background: var(--btn-color);
 }
-.btn-purple:hover{
-    color: black;
-    background: white;
+.btn-projects:hover{
+    color: var(--btn-color);
+    background: var(--btn-hover);
 }
 #home .card{
-    background: #77349B;
+    background: var(--primary-color);
     color: white;
 }
 
@@ -87,21 +97,24 @@ body{
 
 footer{
     text-align: center;
-    color: #b197Fc;
+    color: var(--primary-color);
 
 }
 
 footer a{
-    color: #b197Fc;
+    color: var(--primary-color);
     padding: 0 10px;
 }
 
-i{
+.btn-footer i{
+    color: var(--btn-footer-color);
     font-size: 3em;
 }
-
-i:hover{
-    color: #9C00F0;
+.btn-footer i:hover{
+    color: var(--btn-footer-hover);
+}
+.social-links{
+    color: var(--secondary-color);
 }
 
 

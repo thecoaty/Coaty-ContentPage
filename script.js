@@ -10,7 +10,7 @@ if(savedTheme){
     updateButton(savedTheme);
 }
 if (!savedTheme) {
-  html.setAttribute("data-theme", "dark");
+  html.setAttribute("data-theme", "white");
 }
 changeThemeB.addEventListener("click", () => {
 const currentTheme = html.getAttribute("data-theme");

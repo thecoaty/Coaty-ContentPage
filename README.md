@@ -1,8 +1,8 @@
 # Coaty-ContentPage
-Sobre o projeto:<br>
-Esse é meu site pessoal, aqui pratico o que aprendo, linko meus projetos e regtistro meus marcos na minha trajetoria como dev.
+## Sobre o projeto:
+Esse é meu site pessoal, aqui pratico o que aprendo, linko meus projetos e registro meus marcos na minha trajetoria como dev.
 <br>
-# Tecnologias:
+## Tecnologias:
 <p>
 <img alt="HTML" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
 <img alt="CSS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">

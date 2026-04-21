@@ -1,18 +1,12 @@
 # Coaty-ContentPage
-study, learn and practice web development
-
-<h3>15/01/2025</h3>
-+ Responsividade
+Sobre o projeto:<br>
+Esse é meu site pessoal, aqui pratico o que aprendo, linko meus projetos e regtistro meus marcos na minha trajetoria como dev.
 <br>
-<hr>
+# Tecnologias:
+<p>
+<img alt="HTML" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+<img alt="CSS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+<img alt="JS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+</p>
 
-<h3>20/01/2025</h3>
-<h4>Site refeito usando Bootstrap5</h4>
-+ Nova interface <br>
-+ Responsividade <br>
-+ FontAwesome <br>
-
-<br>
-<hr>
-<h3>03/02/2026</h3>
-<h4>Adicionado Tema Claro</h4>
+>[🔗acesse aqui](https://thecoaty.github.io/Coaty-ContentPage/)

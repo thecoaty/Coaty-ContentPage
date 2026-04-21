@@ -14,6 +14,7 @@
     --btn-footer-color: #F2F4F3;
     --btn-hover: #0A0908;
     --btn-footer-hover: #49111C;
+    --text-link: #1351d8;
     --font-principal: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     --text-shadow:5px 3px #A4133C;
 }
@@ -30,8 +31,6 @@ body{
     height: 100vh;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     background: var(--bg-color);
 }
 
@@ -48,17 +47,17 @@ ul, li{
 nav{
     display: flex;
     background: var(--primary-color);
-    height: 5rem;
+    height: 10%;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
 }
 #nav-principal{
     padding: 0;
     display: flex;
     width: 100%;
     justify-content: center;
-    /* margin-left: auto; */
     a{
         margin: 0.5rem;
         text-decoration: none;
@@ -100,12 +99,9 @@ nav button{
 
 /* Conteudo */
 main{
-    width: 100%;
-    height: 100%;
     padding-bottom: 5rem;
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--secondary-color);
@@ -114,11 +110,22 @@ main{
     }
 }
 .home{
+    padding-top: 2%;
+    height: 100%;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3{
+        width: 80%;
+        font-size: 1.3rem;
+    }
 }
 
 #coaty{
     margin-bottom: 0;
+    padding-top: 25px;
     font-size: 5.2rem;
     text-shadow: var(--text-shadow);
     font-family: var(--font-principal);
@@ -150,29 +157,62 @@ footer a{
 .btn-footer i:hover{
     color: var(--btn-footer-hover);
 }
-#home .card{
-    background: var(--primary-color);
-    color: white;
-}
-#grid{
+#gridProjects{
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 1rem;
 }
+#gridHome{
+    margin-top: 2%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+}
 
 .project{
     color: white;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     border-radius: 10px;
     background: var(--primary-color);
+    padding: 10px 10px;
+    p a{
+        color: var(--text-link);
+        text-decoration: none;
+        border-radius: 3px;
+    }
+    p a:hover{
+        background: var(--btn-color);
+    }
+    
 }
+.project-img{
+    background-color: var(--bg-color);
+    img{
+        width: 70%;
+        border-radius: 50%;
+    }
+}
+.project-linguagens{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i{
+        font-size: 72px;
+        color: #8A6FE8;
+    }
+    h3{
+        width: 100%;
+    }
+}
+
 .btn-projects{
     padding: 10px;
     background: var(--btn-color);
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.1rem;
-    border: 0px solid transparent;
+    border: none;
 }
 .btn-projects:hover{
     color: var(--btn-color);
@@ -181,15 +221,21 @@ footer a{
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #grid{
+    #gridProjects, #gridHome{
     grid-template-columns: auto;
+}
+.project-img{
+    grid-row: 1;
 }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-#grid{
+#gridProjects, #gridHome{
     grid-template-columns: auto;
+}
+.project-img{
+    grid-row: 1;
 }
 } 
 

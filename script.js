@@ -33,18 +33,19 @@ function updateButton(theme){
     }
 }
 
-/*Página carrega
+const selectFiltrar = document.getElementById("tipo-projeto");
+const botaoFiltrar = document.getElementById("btnFiltrar");
 
-JS pergunta:
-
-Existe tema salvo? → usa
-
-
-Usuário clica no botão
-
-JS muda data-theme
-
-CSS troca as cores
-
-Preferência fica salva
-*/
+botaoFiltrar.addEventListener('click', () =>{
+    const categoriaFiltro = selectFiltrar.value;
+    const projetos = document.querySelectorAll(".project");
+    projetos.forEach(project =>{
+        const tipo = project.dataset.categoria;
+        if(categoriaFiltro === "all" || tipo === categoriaFiltro){
+            project.classList.remove("oculto");
+        }
+        else{
+            project.classList.add("oculto");
+        }
+    })
+})

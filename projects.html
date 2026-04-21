@@ -30,13 +30,22 @@
                 <h1 id="coaty">Projects</h1>
                 <h3> Aqui vou compartilhar todos os meus projetos em progresso ou finalizados. </h3>
 
+            <div id="projects-search">
+                <select id="tipo-projeto" name="tipo-projeto">
+                    <option value="all">Todos</option>
+                    <option value="frontend">Front-End</option>
+                    <option value="backend">Back-End</option>
+                </select>
+                <button id="btnFiltrar" class="btn-projects">Pesquisar</button>
+            </div>
+
             <!-- Inicio row -->
             <section id="gridProjects">
 
                 <!-- Inicio conteudos -->
 
                 <!-- Projeto Site -->
-                <div class="project">
+                <div class="project" data-categoria="frontend">
                     <h1>CoatyWebsite</h1>
                     <hr>
                     <p>Este site, aonde compartilho meus projetos. <br> Meus planos futuros são de incluir features de back-end conforme eu avance nos meus estudos.</p>
@@ -53,7 +62,7 @@
                 <div class="project">
                     <h1>Editor de Vídeos</h1>
                     <hr>
-                    <p>Sou editor de vídeos, atuo em diferentes seguimentos tendo trabalhos incuindo aulas para curso de Inglês, gameplays, cortes de lives e alguns projetos pessoais. </p>
+                    <p>Sou editor de vídeos, atuo em diferentes seguimentos tendo trabalhos incluindo aulas para curso de Inglês, gameplays, cortes de lives e alguns projetos pessoais. </p>
                     <a href="https://www.behance.net/coaty/projects" target="_blank">
                         <button class="btn-projects">
                             <i class="fa-brands fa-square-behance"></i>
@@ -64,7 +73,7 @@
                 <!-- Fim portfólio  -->
 
                 
-                 <div class="project">
+                 <div class="project" data-categoria="frontend">
                     <h1>NetflixClone</h1>
                     <hr>
                     <p>Projeto da imersão front-end com IA da Alura, consiste em um clone da interface da Netflix, utilizando HTML, CSS e JavaScript.</p>
@@ -82,7 +91,7 @@
                     </a>
                 </div>
                 
-                <div class="project">
+                <div class="project" data-categoria="backend">
                     <h1>ScreenSound</h1>
                     <hr>
                     <p>Meu primeiro projeto em C#, estou fazendo conforme estudo a tilha de .Net da Alura. Se resume a um simples programa de console para catalogar bandas.</p>
@@ -93,7 +102,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-categoria="frontend">
                     <h1>SiteFord</h1>
                     <hr>
                     <p>Desafio da sprint de Html e CSS da Ford &lt;Enter&gt;, feito com base nas exigências do professor, porém com liberdade criativa. Esse projeto serviu como um grande incentivo para eu voltar a atualizar esse daqui. </p>
@@ -104,7 +113,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-categoria="frontend">
                     <h1>UseDev</h1>
                     <hr>
                     <p>

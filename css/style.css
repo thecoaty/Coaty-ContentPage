@@ -1,9 +1,4 @@
-/* Navegação #77349B */
-/* Background #4A424D */
-/* Background projects #9C00F0 */
-/* #b197Fc */
 
-/* Layout */
 :root{
     --bg-color: #0A0908;
     --primary-color: #49111C;
@@ -55,7 +50,7 @@ nav{
     justify-content: space-between;
     position: fixed;
 }
-#nav-principal{
+.nav-principal{
     padding: 0;
     display: flex;
     width: 100%;
@@ -125,7 +120,7 @@ main{
     }
 }
 
-#coaty{
+.coaty{
     margin-bottom: 0;
     padding-top: 25px;
     font-size: 5.2rem;
@@ -187,7 +182,7 @@ footer a{
     }
     
 }
-.project-img{
+.home-img{
     background-color: var(--bg-color);
     img{
         width: 70%;
@@ -253,33 +248,12 @@ footer a{
     cursor: pointer;
 }
 
-/* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-    #gridProjects, #gridHome{
-    grid-template-columns: auto;
-}
-.project-img{
-    grid-row: 1;
-}
-}
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (max-width: 1100px) {
 #gridProjects, #gridHome{
-    grid-template-columns: auto;
+grid-template-columns: auto;
 }
-.project-img{
+.home-img{
     grid-row: 1;
 }
-} 
-
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 768px) and (max-width: 1200px) { 
-
- }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
- }
+}

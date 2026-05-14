@@ -1,6 +1,5 @@
-const selectFiltrar = document.getElementById("tipo-projeto");
-const botaoFiltrar = document.getElementById("btnFiltrar");
-botaoFiltrar.addEventListener('click', () =>{
+export default function filtrarProjetos(){
+    const selectFiltrar = document.getElementById("tipo-projeto");
     const categoriaFiltro = selectFiltrar.value;
     const projetos = document.querySelectorAll(".project");
     projetos.forEach(project =>{
@@ -12,4 +11,4 @@ botaoFiltrar.addEventListener('click', () =>{
             project.classList.add("oculto");
         }
     })
-})
+}
